@@ -10,6 +10,7 @@
 Применение лучших парадигм и стандартов написания кода помогут не тратить время попусту в попытке понять свой собственный (или чей-то еще) код.
 
 > <em>We don’t read code, we <b>decode</b> it &ndash; Peter Seibel</em> -- оригинал
+
 > <em>Мы не читаем код, а <b>декодируем (интерпретируем?)</b> его &ndash; Питер Сейбел</em>
 
 As developers, we're sometimes tempted to write code in a way that's convenient for the time being without regard for best practices; this makes code reviews and testing more difficult. In a sense, we're <em>encoding</em>&mdash;and, in doing so, making it more difficult for others to decode our work. But we want our code to be usable, readable, and maintainable. And that requires coding the <em>right</em> way, not the easy way.
