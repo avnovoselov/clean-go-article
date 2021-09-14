@@ -2,10 +2,8 @@
 
 ## Предисловие: зачем писать чистый код?
 
-Перевод статьи https://github.com/Pungyeon/clean-go-article.
-
-Эта статья является справочником для сообщества Go, целью которой является помочь разработчикам писать более чистый код.
-Неважно, работаешь ли ты над своим проектом или являешься частью большой команды, умение писать чистый код - важный навык, который нужно приобрести.
+Перевод этой [статьи](https://github.com/Pungyeon/clean-go-article) является справочником для сообщества Go, призванный, помочь разработчикам писать более чистый код.
+Неважно, работаешь ли ты над своим проектом или являешься частью большой команды, умение писать чистый код - важный навык, которым стоит обзавестись.
 
 Применение лучших парадигм и стандартов написания кода помогут не тратить время попусту в попытке понять свой собственный (или чей-то еще) код.
 
@@ -13,11 +11,12 @@
 
 > <em>Мы не читаем код, а <b>декодируем (интерпретируем?)</b> его &ndash; Питер Сейбел</em>
 
-As developers, we're sometimes tempted to write code in a way that's convenient for the time being without regard for best practices; this makes code reviews and testing more difficult. In a sense, we're <em>encoding</em>&mdash;and, in doing so, making it more difficult for others to decode our work. But we want our code to be usable, readable, and maintainable. And that requires coding the <em>right</em> way, not the easy way.
+Иногда, вопреки здравому смыслу, мы торопимся написать что-то, игнорируя передовой опыт, что в дальнейшем усложний ревью и тестирование кода.
+В некотором смысле мы <em>шифруем (кодируем)</em> смысл, тем самым, усложняем работу других - расшифровать код. Мы же хотим, чтобы наш код был переиспользуемым, читаемым и поддерживаемым. В таком случае код следует писать <em>правильным</em>, а не простым путем.
 
-This document begins with a simple and short introduction to the fundamentals of writing clean code. Later, we'll discuss concrete refactoring examples specific to Go.
+Мы начнем с короткого введения в основы написания чистого кода. Позже мы обсудим конкретный примеры рефакторинга, характерные для `Go`.
 
-##### A short word on `gofmt`
+##### Коротко о `gofmt`
 I'd like to take a few sentences to clarify my stance on `gofmt` because there are plenty of things I disagree with when it comes to this tool. I prefer snake case over camel case, and I quite like my constant variables to be uppercase. And, naturally, I also have many opinions on bracket placement. *That being said*, `gofmt` does allow us to have a common standard for writing Go code, and that's a great thing. As a developer myself, I can certainly appreciate that Go programmers may feel somewhat restricted by `gofmt`, especially if they disagree with some of its rules. But in my opinion, homogeneous code is more important than having complete expressive freedom.
 
 ## Table of Contents
