@@ -1,10 +1,16 @@
-# Clean Go Code
+# Чистый код Go
 
-## Preface: Why Write Clean Code?
+## Предисловие: зачем писать чистый код?
 
-This document is a reference for the Go community that aims to help developers write cleaner code. Whether you're working on a personal project or as part of a larger team, writing clean code is an important skill to have. Establishing good paradigms and consistent, accessible standards for writing clean code can help prevent developers from wasting many meaningless hours on trying to understand their own (or others') work.
+Перевод статьи https://github.com/Pungyeon/clean-go-article.
 
-> <em>We don’t read code, we <b>decode</b> it &ndash; Peter Seibel</em>
+Эта статья является справочником для сообщества Go, целью которой является помочь разработчикам писать более чистый код.
+Неважно, работаешь ли ты над своим проектом или являешься частью большой команды, умение писать чистый код - важный навык, который нужно приобрести.
+
+Применение лучших парадигм и стандартов написания кода помогут не тратить время попусту в попытке понять свой собственный (или чей-то еще) код.
+
+> <em>We don’t read code, we <b>decode</b> it &ndash; Peter Seibel</em> -- оригинал
+> <em>Мы не читаем код, а <b>декодируем (интерпретируем?)</b> его &ndash; Питер Сейбел</em>
 
 As developers, we're sometimes tempted to write code in a way that's convenient for the time being without regard for best practices; this makes code reviews and testing more difficult. In a sense, we're <em>encoding</em>&mdash;and, in doing so, making it more difficult for others to decode our work. But we want our code to be usable, readable, and maintainable. And that requires coding the <em>right</em> way, not the easy way.
 
