@@ -17,15 +17,15 @@
 Мы начнем с короткого введения в основы написания чистого кода. Позже мы обсудим конкретный примеры рефакторинга, характерные для `Go`.
 
 ##### Коротко о `gofmt`
-I'd like to take a few sentences to clarify my stance on `gofmt` because there are plenty of things I disagree with when it comes to this tool. I prefer snake case over camel case, and I quite like my constant variables to be uppercase. And, naturally, I also have many opinions on bracket placement. *That being said*, `gofmt` does allow us to have a common standard for writing Go code, and that's a great thing. As a developer myself, I can certainly appreciate that Go programmers may feel somewhat restricted by `gofmt`, especially if they disagree with some of its rules. But in my opinion, homogeneous code is more important than having complete expressive freedom.
+Мне бы хотелось сказать пару слов о `gofmt`, потому как я не согласен со многими вещами, когда дело доходит до этого инструмента. Я предпочитаю `snake_case`, а не `camelCase`, а константы были в `UPPERCASE`. Конечно, у меня есть собсвенное мнение и о расстановке скобок. `gofmt` позволяет иметь единый стандарт для написания кода на `Go` и это здорово. С точки зрения разработчика, я понимаю, что `gofmt` загоняет нас в рамки, даже если мы не согласны с его некоторыми правилами. На мой взляд единый стиль написания кода, важнее свободы самовыражения.
 
 ## Table of Contents
-* [Introduction to Clean Code](#Introduction-to-Clean-Code)
+* [Введение в чистый код](#Introduction-to-Clean-Code)
     * [Test-Driven Development](#Test-Driven-Development)
-    * [Naming Conventions](#Naming-Conventions)
-    * * [Comments](#Comments)
-    	* [Function Naming](#Function-Naming)
-    	* [Variable Naming](#Variable-Naming)
+    * [Соглашение об именах](#Naming-Conventions)
+    * * [Комментарии](#Comments)
+    	* [Наименование функций](#Function-Naming)
+    	* [Наименование переменных](#Variable-Naming)
     * [Cleaning Functions](#Cleaning-Functions)
       * [Function Length](#Function-Length)
       * [Function Signatures](#Function-Signatures)
