@@ -20,8 +20,8 @@
 Мне бы хотелось сказать пару слов о `gofmt`, потому как я не согласен со многими вещами, когда дело доходит до этого инструмента. `CamelCase`-у я предпочитаю `snake_case`, а имена констант мне нравятся в `UPPERCASE`. Конечно, у меня есть собсвенное мнение и о расстановке скобок. `gofmt` позволяет иметь единый стандарт для написания кода на `Go` и это здорово. С точки зрения разработчика, я понимаю, что `gofmt` загоняет нас в рамки, даже если мы не согласны с его некоторыми правилами. На мой взляд единый стиль написания кода, важнее свободы самовыражения.
 
 ## Table of Contents
-* [Введение в чистый код](#Introduction-to-Clean-Code)
-    * [Test-Driven Development](#Test-Driven-Development)
+* [Введение в чистый код](#Введение-в-чистый-код)
+    * [Разработка через тестирование](#Разработка-через-тестирование)
     * [Соглашение об именах](#Naming-Conventions)
     * * [Комментарии](#Comments)
     	* [Наименование функций](#Function-Naming)
@@ -42,22 +42,22 @@
     * [The Empty `interface{}`](#The-Empty-Interface)
 * [Summary](#Summary)
 
-## Introduction to Clean Code
+## Введение в чистый код
 
-Clean code is the pragmatic concept of promoting readable and maintainable software. Clean code establishes trust in the codebase and helps minimize the chances of careless bugs being introduced. It also helps developers maintain their agility, which typically plummets as the codebase expands due to the increased risk of introducing bugs.
+_Чистый код_ это прагматическая концепция, продвигающая читаемое и обслуживаемое программное обеспечение. Чистый код призываем доверять кодовой базе и снижаем шанс возникновения ошибок из-за невнимательности. Также чистый код помогает разработчика поддерживать гибкость, которая падает с увеличением кодовой базы из-за риска допустить ошибку. 
 
-### Test-Driven Development
+### Разработка через тестирование
 
-Test-driven development is the practice of testing your code frequently throughout short development cycles or sprints. It ultimately contributes to code cleanliness by inviting developers to question the functionality and purpose of their code. To make testing easier, developers are encouraged to write short functions that only do one thing. For example, it's arguably much easier to test (and understand) a function that's only 4 lines long than one that's 40.
+_Разработка через тестирование_ (Test-driven development, TDD) - это практика частого тестирования разрабатываемого ПО ветечении коротких итераций или спринтов. TDD способствует чистоте кода, заставляя разработчиков радумываться о функциональности и назначении своих функций и методов. Чтобы упростить тестирование разработчикам следует разрабатывать небольшие функции, которые делают что-то одно. Например: функцию, длинной в 4 строки гораздо проще протестировать и понять, нежели фукцию из 40 строк.
 
-Test-driven development consists of the following cycle:
+TDD состоит из следующих шагов:
 
-1. Write (or execute) a test
-2. If the test fails, make it pass
-3. Refactor your code accordingly
-4. Repeat
+1. Напиши (или выполни готовый) тест  Write (or execute) a test
+2. Если тест не прошел - поправь код
+3. Проведи рефакторинг
+4. Повтори 
 
-Testing and refactoring are intertwined in this process. As you refactor your code to make it more understandable or maintainable, you need to test your changes thoroughly to ensure that you haven't altered the behavior of your functions. This can be incredibly useful as the codebase grows.
+В практике TDD тестирование переплетается с рефакторингом. То мере проведения рефакторинга код становится понятнее и удобнее в обслуживание, но следует тщательно тестировать изменения, чтобы убедиться, что поведение функций осталось прежним. Такой подход очень полезем на мере увеличения кодовой базы
 
 ###  Naming Conventions
 
